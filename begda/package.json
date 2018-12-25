@@ -1,0 +1,14 @@
+{
+  "name": "begda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "liaohui1080",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "begda": "index.js"
+  },
+  "dependencies": {
+    "store": "^2.0.12"
+  }
+}

@@ -1,0 +1,16 @@
+/*页面切换动画*/
+.page-enter-active, .page-leave-active {
+    transition:opacity .2s;
+}
+.page-enter, .page-leave-active {
+    /*margin-left: 100%;*/
+    opacity: .6;
+}
+
+.fade-enter-active, .fade-leave-active {
+    /*transition: margin-left .9s;*/
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    /*opacity: 0;*/
+    /*margin-left: 100%*/
+}
