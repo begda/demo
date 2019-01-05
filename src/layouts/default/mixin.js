@@ -19,7 +19,7 @@ export default {
     },
     methods:{
         onTheme(item) {
-            this.$store.commit('setTheme', item)
+            this.$store.commit('setLayout', item)
         },
         navClick(item){
             console.log(item)
@@ -33,15 +33,15 @@ export default {
         menuActive(){
             return this.$route.name
         },
-        sidMenu(){
-            return {}
+        noCache(){
+            console.log(Array.from(this.$store.state.noCache))
+            return this.$store.state.noCache
         },
         meta() {
-            return this.$route.meta
+            console.log(this.$store.state.meta)
+            return this.$store.state.meta
         },
-        theme(){
-            return this.$route.theme
-        },
+
         menus() {
 
             return this.$store.state.api.navMenu

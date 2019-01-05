@@ -8,11 +8,12 @@
 <script>
 
     export default {
-        // app() {
-        //     return {
-        //
-        //     }
-        // },
+        app() {
+            return {
+                header:false,
+                iframe:{side:true}
+            }
+        },
         methods:{
             fanhui(){
                 this.$refreshLeave({name:'home',query:{ttt:200000}})

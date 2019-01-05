@@ -1,7 +1,8 @@
 <template>
     <div class="layout dark">
-        <Layout>
-            <Header v-if="meta.header" class="header">
+        {{noCache}}
+        <el-container>
+            <el-header v-if="meta.header" class="header">
                 <el-row>
                     <el-col :span="12">
                         <div class="layout-logo"><i class="el-icon-success icon"></i> 前端基础开发技术展示平台</div>
@@ -9,7 +10,7 @@
                     <el-col :span="12">
                         <el-menu  mode="horizontal" style="float:right; padding-left: 15px">
                             <el-submenu index="2">
-                                <template slot="title"><Avatar icon="ios-person"/></template>
+                                <template slot="title">头像</template>
                                 <el-menu><el-menu-item index="2-1">用户名字</el-menu-item></el-menu>
                                 <el-menu><el-menu-item index="2-1">选项1</el-menu-item></el-menu>
                                 <el-menu><el-menu-item index="2-1">选项1</el-menu-item></el-menu>
@@ -29,9 +30,9 @@
                         </div>
                     </el-col>
                 </el-row>
-            </Header>
-            <Layout>
-                <Sider v-show="meta.side" collapsible :collapsed-width="60" v-model="isCollapsed"
+            </el-header>
+            <el-container>
+                <el-aside v-show="meta.side" collapsible :collapsed-width="60" v-model="isCollapsed"
                        :style="{background:'#fff'}">
                     <div v-if="meta.side">
 
@@ -41,10 +42,10 @@
                                           :data="item"></ba-side-menu>
                         </el-menu>
                     </div>
-                </Sider>
+                </el-aside>
 
 
-                <Layout>
+                <el-container>
                     <div style="">
 
                         <el-tabs type="border-card" v-model="activeIndex">
@@ -54,35 +55,33 @@
                             <el-tab-pane label="定时任务补偿" name="fourth"></el-tab-pane>
                         </el-tabs>
                     </div>
-                    <Layout :style="{padding: '20px'}">
-                        <Breadcrumb :style="{margin: '24px 0'}" v-if="meta.breadcrumb">
-                            <BreadcrumbItem>Home</BreadcrumbItem>
-                            <BreadcrumbItem>Components</BreadcrumbItem>
-                            <BreadcrumbItem>Layout</BreadcrumbItem>
-                        </Breadcrumb>
+                    <el-container :style="{padding: '20px'}">
+                        <div :style="{margin: '24px 0'}" v-if="meta.breadcrumb">
+                           面包学
+                        </div>
                         <div v-loading="pageLoading">
                             <Content v-if="meta.content"
                                      :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
-                                <keep-alive>
+                                <keep-alive >
                                     <!--<transition name="page" mode="out-in">-->
-                                    <router-view v-if="meta.keepAlive">
+                                    <router-view v-if="meta.cache">
                                         <!-- 这里是会被缓存的视图组件，比如 Home！ -->
                                     </router-view>
                                     <!--</transition>-->
                                 </keep-alive>
                                 <!--<transition name="fade" mode="out-in">-->
-                                <router-view v-if="!meta.keepAlive">
+                                <router-view v-if="!meta.cache">
                                     <!-- 这里是不被缓存的视图组件，比如 Edit！ -->
                                 </router-view>
                                 <!--</transition>-->
                             </Content>
                         </div>
-                    </Layout>
+                    </el-container>
 
-                </Layout>
-            </Layout>
-            <Footer v-if="meta.footer">Footer</Footer>
-        </Layout>
+                </el-container>
+            </el-container>
+            <el-footer v-if="meta.footer">Footer</el-footer>
+        </el-container>
     </div>
 
 </template>

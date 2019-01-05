@@ -1,20 +1,20 @@
 <template>
-    <div >
-        <def></def>
-    </div>
+  <div >
+    <def></def>
+  </div>
 </template>
 
 <script>
 
-    import def from '@/layouts/default.vue'
+	import def from '@/layouts/default.vue'
 
-    export default {
-        name: "app",
-        components: {
-            "def": def,
-        },
+	export default {
+		name: "app",
+		components: {
+			"def": def,
+		},
 
-    };
+	};
 </script>
 
 <style lang="less">

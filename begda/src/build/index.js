@@ -14,7 +14,7 @@ utils.watcher(viewsDir).all(()=>{
         if(err) {
             throw new Error('路由创建错误:'+stderr)
         }
-        // console.log(stdout)
+        console.log(stdout)
     });
 
 })

@@ -13,6 +13,7 @@ module.exports = {
             .test(/\.(tpl)$/)
             .use('html-loader')
             .loader('html-loader')
+
     }
 
 };
