@@ -8,9 +8,10 @@ const state = {
 };
 
 const getters = {
-  // async navMenu(state) {
-  //     return state.navMenu
-  // },
+  async navMenu(state) {
+      // return await menu()
+      return  await menu()
+  },
 };
 const mutations = {
   navMenu(state, data) {
@@ -20,7 +21,9 @@ const mutations = {
 
 const actions = {
   async navMenu({ commit }) {
-    commit("navMenu", await menu());
+    let cc=await menu()
+    commit("navMenu", cc);
+    return cc
   }
 };
 

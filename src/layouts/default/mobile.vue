@@ -14,16 +14,25 @@
                 </el-menu>
             </div>
         </el-aside>
-        <keep-alive>
-            <router-view v-if="$route.meta.keepAlive">
-                <!-- 这里是会被缓存的视图组件，比如 Home！ -->
-            </router-view>
-        </keep-alive>
-        <transition>
-            <router-view v-if="!$route.meta.keepAlive">
-                <!-- 这里是不被缓存的视图组件，比如 Edit！ -->
-            </router-view>
-        </transition>
+        <div v-loading="pageLoading">
+            <div v-show="meta.content"
+                 :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
+                <!--<template v-if="meta.cache">-->
+                <keep-alive :exclude="noCache">
+                    <!--<transition name="page" mode="out-in">-->
+                    <router-view >
+                        <!-- 这里是会被缓存的视图组件，比如 Home！ -->
+                    </router-view>
+                    <!--</transition>-->
+                </keep-alive>
+                <!--</template>-->
+                <!--<transition name="fade" mode="out-in">-->
+                <!--<router-view v-if="!meta.cache">-->
+                <!--&lt;!&ndash; 这里是不被缓存的视图组件，比如 Edit！ &ndash;&gt;-->
+                <!--</router-view>-->
+                <!--</transition>-->
+            </div>
+        </div>
     </div>
 
 </template>

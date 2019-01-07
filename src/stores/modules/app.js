@@ -2,14 +2,24 @@
  * 这是app级别的状态管理
  * */
 // import {layout} from "@/util/index"; //默认主题
-import localstore from "store";
-import {deviced, layout} from "@/util/index";
 
+import {deviced, layout} from "@/util/index";
+import _ from 'lodash'
+function dedupe(array) {
+	return Array.from(new Set(array));
+}
+let cacheArr = new Set()
+let tabsArr =[]
 const state = {
-	layout: "",
+	pageLoading: true,
+	pageRefresh:true,
+	pageHeight: 0, // 页面默认高度,减去头部 和 tabs
+	layout: "", // 存储当前主题
 	deviced: {}, // 存储系统类型
-	meta:{},
-	noCache:[]
+	meta: {}, // 存储当前页面的设置的app状态
+	noCache: [], //存储当前不缓存的页面
+	tabs: [],
+	activeTab: ''
 	// meta: {
 	//     keepAlive: false,
 	//     keepAlive2: true,
@@ -63,19 +73,49 @@ const mutations = {
 	// footer(state, data){state.meta.footer=data},
 
 	// 所有设备改变以后的参数 通过这里设置 状态, 供其他所有需要设备切换的页面使用
-	meta(state, data){
-		state.meta=data
+	meta(state, data) {
+		state.meta = data
 	},
-	setNoCache(state,data){
-		let acb=new Set()
-		acb.add(data)
-		console.log(Array.from(acb))
-		// state.noCache=[...state.noCache,...acb]
-		// state.noCache.push(data)
+
+	//设置不缓存页面
+	setNoCache(state, data) {
+		cacheArr.add(data)
+		state.noCache = Array.from(cacheArr)
 	},
-	removeNoCache(state,data){
-		state.noCache.delete(data)
-	}
+	// 删除不缓存页面
+	removeNoCache(state, data) {
+		cacheArr.delete(data)
+		state.noCache = Array.from(cacheArr)
+	},
+	// 控制页面刷新
+	pageRefresh(state, data){
+		state.pageRefresh = data
+	},
+
+	pageLoading(state, data) {
+		state.pageLoading = data
+	},
+
+	pageHeight(state, data) {
+		state.pageHeight = data
+	},
+	addTabs(state, data) {
+		let newData={...data}
+		let tabIndex=_.findIndex(state.tabs,newData)
+		if(tabIndex<0){
+			state.tabs.push(newData)
+		}
+	},
+	// 删除tab
+	removeTabs(state, data) {
+		let newData={...data}
+		let tabIndex=_.findIndex(state.tabs,newData)
+		state.tabs.splice(tabIndex,1)
+	},
+	activeTab(state, data) {
+		state.activeTab = data
+	},
+
 };
 
 const actions = {};

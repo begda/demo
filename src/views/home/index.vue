@@ -1,10 +1,14 @@
 <template>
   <div class="ass">
-    这是home pc
+    这是home pc 页面{{pageHeight}}
     <el-button @click="dianji()">asdf</el-button>
     <el-button @click="dianji2()">asdf</el-button>
     <div>{{ date }}</div>
     {{ new Date().getTime() }}
+    <el-card>
+      asfdasdf
+    </el-card>
+    <p style="height: 10000px"></p>
   </div>
 </template>
 
@@ -14,7 +18,8 @@ export default {
   comments: {},
   app() {
     return {
-	    cache:false,
+	    // cache:false,
+      // header:false,
       iframe:{cache:false}
       // keepAlive: true
       // theme:'blue'
@@ -28,23 +33,36 @@ export default {
   },
   methods: {
     dianji() {
-      // this.$refresh();
-      this.$store.commit('setNoCache',1)
+    	let self=this;
+	    // this.$store.commit('pageLoading',true)
+      this.$refresh();
+
+      // this.$store.commit('setNoCache',1)
     },
 	  dianji2() {
 		  // this.$refresh();
-		  this.$store.commit('setNoCache',2)
+
+
 	  },
   },
   async created() {
     let self = this;
+
   },
-  mounted() {},
+	mounted() {
+		let self=this;
+		// setTimeout(()=>{self.$store.commit('pageLoading',false)},2000)
+
+	},
   activated() {
     // this.$liaohui()
     // this.date=new Date().getTime()
   },
-  computed: {}
+  computed: {
+  	pageHeight(){
+  		return this.$store.state.pageHeight
+    }
+  }
 };
 </script>
 

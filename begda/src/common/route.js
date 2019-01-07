@@ -275,14 +275,44 @@ function clone(o) {
 	// 存储递归以后的数据
 	let temp = [];
 	o.map(res => {
-		console.log(res)
 		if (res.children) { //递归自己,直到没有子节点为止
-			temp.push(`{
-                  path:'${res.path}',
-                  chunkName:'${res.chunkName}',
-                  component:${res.component},
-                  children:[${clone(res.children)}]
-                  }`)
+			// temp.push(`{
+      //             path:'${res.path}',
+      //             chunkName:'${res.chunkName}',
+      //             component:${res.component},
+      //             children:[${clone(res.children)}]
+      //             }`)
+			if (res.mobile) {
+				temp.push(`{ name:'${res.name}',
+                 path:'${res.path}',
+                 chunkName:'${res.chunkName}',
+                 component:async (resolve)=>{
+                    let module;
+		                if(os){
+		                  module=	await import('@/views/${res.file}_m.vue')
+		                  module.default.name='${res.name}' //给组件设置名字
+			                return module
+		                }else{
+		                  module=	await import('@/views/${res.file}.vue')
+			                module.default.name='${res.name}' //给组件设置名字
+			                return module
+		                }
+                 },
+                 children:[${clone(res.children)}]
+                 }`)
+			} else {
+				temp.push(`{ name:'${res.name}',
+                 path:'${res.path}',
+                 chunkName:'${res.chunkName}',
+                 component:async (resolve)=>{
+                    let module=	await import('@/views/${res.file}.vue')
+                    module.default.name='${res.name}' //给组件设置名字
+                    return module
+                 },
+                 children:[${clone(res.children)}]
+                 }`)
+			}
+
 		} else {
 
 			if (res.mobile) {
@@ -294,11 +324,11 @@ function clone(o) {
 		                if(os){
 		                  module=	await import('@/views/${res.file}_m.vue')
 		                  module.default.name='${res.name}' //给组件设置名字
-			                return import('@/views/${res.file}.vue')
+			                return module
 		                }else{
 		                  module=	await import('@/views/${res.file}.vue')
 			                module.default.name='${res.name}' //给组件设置名字
-			                return import('@/views/${res.file}.vue')
+			                return module
 		                }
                  }
                  }`)
@@ -309,7 +339,7 @@ function clone(o) {
                  component:async (resolve)=>{
                     let module=	await import('@/views/${res.file}.vue')
                     module.default.name='${res.name}' //给组件设置名字
-                    return import('@/views/${res.file}.vue')
+                    return module
                  }
                  }`)
 			}
@@ -330,8 +360,10 @@ export default [${Object.values(clone(createRoutes()))}]
 `;
 
 fsExtra.outputFile(rootDir + '/.begda/route.js', tpl, err => {
-	consola.error(err) // => null
 
+	if(err){
+		consola.error(err) // => null
+	}
 })
 module.exports = function () {
 	fsExtra.outputFile(rootDir + '/.begda/route.js', tpl, err => {

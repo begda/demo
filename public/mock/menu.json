@@ -1,18 +1,68 @@
 [
   {
-
-    "path": "/home",
-    "title":"首页"
-  },
-
-  {
-
-    "path": "/liaohui",
-    "title":"ddd"
+    "title": "首页",
+    "name": "home",
+    "action": "page",
+    "icon": "el-icon-edit",
+    "isHome": true
   },
   {
-
-    "path": "/home/abc/ddd/cc",
-    "title":"ttt"
+    "title": "次页",
+    "name": "liaohui",
+    "action": "page",
+    "icon": "el-icon-edit"
+  },
+  {
+    "title": "iframe",
+    "name": "iframe",
+    "action": "iframe"
+  },
+  {
+    "title": "打开一个连接",
+    "name": "link",
+    "action": "link"
+  },
+  {
+    "title": "打开一个弹窗",
+    "name": "dialog",
+    "action": "dialog",
+    "config": {
+      "full": false
+    }
+  },
+  {
+    "title": "有子菜单",
+    "name": "list",
+    "action": "page",
+    "icon": "el-icon-edit",
+    "sub": [
+      {
+        "title": "第一个子菜单",
+        "name": "list-list1",
+        "action": "page"
+      },
+      {
+        "title": "第二个子菜单",
+        "name": "list-list2",
+        "action": "page"
+      }
+    ]
+  },
+  {
+    "title": "有子菜单2",
+    "name": "submenus2",
+    "action": "page",
+    "sub": [
+      {
+        "title": "第一个子菜单",
+        "name": "list1",
+        "action": "page"
+      },
+      {
+        "title": "第二个子菜单",
+        "name": "list2",
+        "action": "page"
+      }
+    ]
   }
 ]

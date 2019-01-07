@@ -76,13 +76,13 @@ const defaultFalse = function ( val) {
 };
 
 const isApp = to => {
-	console.warn("温馨提示:在新建页面的时候app方法不能写在页面的mixin.js里面");
+	// console.warn("温馨提示:在新建页面的时候app方法不能写在页面的mixin.js里面");
 	// 从路由中读取组件的app方法, app方法不能写在页面的mixin.js里面
 	let app = to.matched[0].components.default.app;
 	if (app) {
 		if (typeof app !== "function") throw new Error("app 只能是一个方法");
 		if (typeof app() !== "object") throw new Error("app的返回值必须是一个对象");
-		return app();
+		return app()
 	} else {
 		return false;
 	}
@@ -113,7 +113,27 @@ function strMapToObj(strMap) {
 	return obj;
 }
 
+const recursionMenu = function (side, data) {
+	let a;
+	//递归整个侧边菜单,找到当前选中的菜单值
+	function sideMenu(side, data) {
+		data.forEach((item)=>{
+			if(item.sub){
+				//递归自己
+				sideMenu(side, item.sub)
+			}else{
+				//如果name===选中的侧边菜单值,就给a赋值
+				if (item.name === side) {
+					a = item;
+				}
+			}
+		})
 
+		return a;
+	}
+
+	return sideMenu(side, data);
+};
 export {
 	api,
 	isUrl,
@@ -123,5 +143,6 @@ export {
 	defaultTrue,
 	isApp,
 	isIframe,
-	strMapToObj
+	strMapToObj,
+	recursionMenu
 };

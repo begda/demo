@@ -1,68 +1,73 @@
 // import '@babel/polyfill'
+import "bootstrap/dist/css/bootstrap.min.css"
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "@/stores/index";
 import Meta from "vue-meta";
 import ElementUI from "element-ui";
-// import { Button, Menu,Submenu,MenuItem,MenuItemGroup,Tooltip,Loading } from 'element-ui';
-import "element-ui/lib/theme-chalk/button.css";
-import "element-ui/lib/theme-chalk/menu.css";
-import "element-ui/lib/theme-chalk/icon.css";
-import "element-ui/lib/theme-chalk/tooltip.css";
-import "element-ui/lib/theme-chalk/loading.css";
-// import iView from "iview";
+
 
 import mixinApp from "./mixin/isApp";
+import {recursionMenu} from '@/util/index'
+
 
 Vue.use(mixinApp);
 Vue.use(ElementUI);
-// Vue.use(Meta);
-// Vue.use(Button)
-// Vue.use(Menu)
-// Vue.use(Submenu)
-// Vue.use(MenuItem)
-// Vue.use(Button)
-// Vue.use(MenuItemGroup)
-// Vue.use(Tooltip)
-// Vue.use(Loading)
+Vue.use(Meta);
 
-import BegdaSideMenu from "@/components/menu/sideMenu";
+
+import BegdaSideMenu from "@/components/menu/sideMenu"; // 递归菜单组件
 
 Vue.component("ba-side-menu", BegdaSideMenu);
 
+Vue.mixin({
+	async	beforeRouteEnter(to, from, next) {
+		// 递归找到当前路由在导航菜单位置,然后用返回值来增加tabs, 所有导航的改变都回触发这里
+	  let isMenu=recursionMenu(to.name,await store.dispatch("api/navMenu"))
+		store.commit('addTabs',isMenu)
+		next();
+  },
 
+	mounted(){
+		let self=this;
+		setTimeout(()=>{
+			// 路由完成加载以后,隐藏加载条
+			store.commit('pageLoading',false)
+		},100)
+	}
+
+})
 
 // 刷新当前页面
 Vue.prototype.$refresh = function() {
-  this.pageLoading = true;
-  this.$router.replace({ name: "blank" });
+  let self=this;
+	this.$store.commit('setNoCache', this.$route.name)
+	this.$store.commit('pageRefresh',false)
+	this.$store.commit('pageLoading',true)
+  setTimeout(()=>{
+	  self.$store.commit('removeNoCache', this.$route.name)
+	  self.$store.commit('pageRefresh',true)
+  },10)
 };
+
 
 // 跳转到一个页面并且刷新这个页面
 Vue.prototype.$refreshLeave = function(newRoute) {
-  this.$router.push(newRoute);
-  this.$router.replace({ name: "blank" });
+  let self=this;
+	this.$router.push(newRoute); // 先跳转到目标页面
+	this.$store.commit('setNoCache', newRoute.name) // 设置不缓存页面
+	this.$store.commit('pageRefresh',false) // 移除页面视图
+  // 使用定时器去触发,否则无法触发
+	setTimeout(()=>{
+		self.$store.commit('removeNoCache', newRoute.name) // 把页面从不缓存列表中移除
+		self.$store.commit('pageRefresh',true) // 重新展示视图
+	},100)
 };
-
-Vue.mixin({
-  data() {
-    return {
-      pageLoading: true
-    };
-  },
-  mounted() {
-    let self = this;
-    setTimeout(() => {
-      self.pageLoading = false;
-    }, 1000);
-  }
-});
 
 async function render() {
   Vue.config.productionTip = false;
-
-  store.dispatch("api/navMenu"); //获取导航菜单
+	store.dispatch("api/navMenu"); //获取导航菜单
   new Vue({
     router: await router(),
     store,
