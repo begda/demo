@@ -82,7 +82,7 @@
 					</div>
 					<!--/tabs菜单-->
 
-					<div ref="content" style="overflow: auto; width: 100%" v-loading="pageLoading">
+					<div ref="content" style="overflow: hidden; width: 100%" v-loading="pageLoading">
 						<div :style="{margin: '24px 0'}" v-show="meta.breadcrumb">
 							面包学
 						</div>

@@ -6,8 +6,6 @@ import router from "./router";
 import store from "@/stores/index";
 import Meta from "vue-meta";
 import ElementUI from "element-ui";
-
-
 import mixinApp from "./mixin/isApp";
 import {recursionMenu} from '@/util/index'
 
@@ -18,8 +16,11 @@ Vue.use(Meta);
 
 
 import BegdaSideMenu from "@/components/menu/sideMenu"; // 递归菜单组件
-
+import Durex from "@/components/durex/index"; // 递归菜单组件
+import Frame from "@/components/durex/frame"; // 递归菜单组件
 Vue.component("ba-side-menu", BegdaSideMenu);
+Vue.component(`ba-${Durex.name}`, Durex);
+Vue.component(`ba-${Frame.name}`, Frame);
 
 Vue.mixin({
 	async	beforeRouteEnter(to, from, next) {

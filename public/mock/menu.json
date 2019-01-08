@@ -14,13 +14,17 @@
   },
   {
     "title": "iframe",
-    "name": "iframe",
-    "action": "iframe"
+    "name": "iframe-1",
+    "action": "iframe",
+    "query": {
+      "src": "https://router.vuejs.org/zh/guide/essentials/nested-routes.html"
+    }
   },
   {
     "title": "打开一个连接",
     "name": "link",
-    "action": "link"
+    "action": "link",
+    "path": "https://www.baidu.com"
   },
   {
     "title": "打开一个弹窗",

@@ -1,6 +1,6 @@
 export const nav = {
-  // menu: "./mock/menu.json",
-  menu: "https://www.easy-mock.com/mock/5c1f07b495d59f6b419dfefe/begda/menus"
+  menu: "./mock/menu.json",
+  // menu: "https://www.easy-mock.com/mock/5c1f07b495d59f6b419dfefe/begda/menus"
 };
 // export const theme = "dark";
 export const layout = "dark"; // 默认布局配置文件

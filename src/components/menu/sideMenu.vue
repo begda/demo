@@ -58,14 +58,15 @@
 			itemClick(item) {
 				switch (item.action) {
 					case 'page':
-						this.$router.push({name: item.name});
+						this.$router.push(item);
 						break;
 					case 'link':
 						//如果是 window,说明需要在新窗口打开的网址
 						window.open(item.path);
 						break;
 					case 'iframe':
-						this.$router.push({name: item.name});
+						console.log(item)
+						this.$router.push(item);
 						break;
 					// case 'dialog':
 					//     //打开弹窗

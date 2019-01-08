@@ -26,12 +26,14 @@ export default {
 			}
 		},
 		onTab(item){
+			// 设置tabs默认选中值
 			this.$store.commit('activeTab',item.name)
-			this.$router.push({name:item.name})
+			// 递归找到当前 已经存在的tabs数组里 找到当前选中的 tab值, 放到路由里面跳转
+			this.$router.push(recursionMenu(item.name,this.tabs))
 		},
 		removeTab(targetName){
 			// this.$store.commit('removeTabs',targetName)
-			let tabs = this.$store.state.tabs;
+			let tabs = this.tabs;
 			let activeName = this.activeTab;
 			if (activeName === targetName) {
 				tabs.forEach((tab, index) => {
@@ -105,7 +107,6 @@ export default {
 			return this.$store.state.isIframe
 		},
 		tabs:{
-
 			get: function () {
 				return this.$store.state.tabs
 			},

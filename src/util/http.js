@@ -14,7 +14,7 @@ axios.interceptors.response.use(function (response) {
 	return response;
 }, function (error) {
 	// 对响应错误做点什么
-	alert('请求失败')
+	// alert('请求失败')
 	return Promise.reject(error);
 });
 export default axios;

@@ -2,36 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835376f5-ea50-4404-b1af-c2b7a226149b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/tabs/tabs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mixin/isApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/iframe/1.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/zijiedian.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/zijiedian/1.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/zijiedian/2.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/zijiedian/2_m.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/zijiedian_m.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.begda/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/.begda/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/durex/frame.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/durex/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/begda/src/common/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/begda/src/common/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/iframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mock/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mock/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/SidebarItem.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/sideMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/sideMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/default/dark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/default/dark.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/default/mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/default/mixin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/default/mobile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/default/mobile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/modules/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/modules/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/modules/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/modules/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/index_m.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/index_m.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/liaohui/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/liaohui/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/liaohui/mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/liaohui/mixin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/iframe/1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/iframe/1.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -58,18 +42,18 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="9" />
-          <entry key="js" value="159" />
-          <entry key="json" value="5" />
-          <entry key="vue" value="95" />
+          <entry key="js" value="165" />
+          <entry key="json" value="6" />
+          <entry key="vue" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="9" />
-          <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="159" />
+          <entry key="JSON" value="6" />
+          <entry key="JavaScript" value="165" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="95" />
+          <entry key="Vue.js" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -77,17 +61,17 @@
           <entry key="dummy" value="3" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="101" />
-          <entry key="js" value="10944" />
-          <entry key="txt" value="24" />
-          <entry key="vue" value="2713" />
+          <entry key="js" value="11186" />
+          <entry key="txt" value="43" />
+          <entry key="vue" value="3252" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="101" />
-          <entry key="JavaScript" value="10944" />
-          <entry key="PLAIN_TEXT" value="33" />
-          <entry key="Vue.js" value="2713" />
+          <entry key="JavaScript" value="11186" />
+          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="Vue.js" value="3252" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -102,47 +86,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/durex/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
+        <entry file="file://$PROJECT_DIR$/src/views/iframe/1.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="26">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/home/index.vue">
+        <entry file="file://$PROJECT_DIR$/public/mock/menu.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/menu/sideMenu.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mixin/isApp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#83#180#0" expanded="true" />
-                <element signature="n#!!block;n#defaultMeta#0" />
-                <element signature="e#2852#3005#0" />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -150,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/layouts/default/dark.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="87" column="18" lean-forward="true" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state relative-caret-position="300">
+              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#el-menu#0;n#el-col#1;n#el-row#0;n#el-header#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#el-col#1;n#el-row#0;n#el-header#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -169,17 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/layouts/default/mixin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/babel.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" selection-start-line="1" selection-end-line="22" />
+            <state relative-caret-position="482">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -187,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="78">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -197,7 +154,7 @@
         <entry file="file://$PROJECT_DIR$/src/stores/modules/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#73#118#0" expanded="true" />
@@ -207,10 +164,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/iframe/1.vue">
+        <entry file="file://$PROJECT_DIR$/src/components/menu/sideMenu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="426">
+              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/durex/frame.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="26" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/home/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -250,6 +228,7 @@
       <find>ifra</find>
       <find>content</find>
       <find>pageRefresh</find>
+      <find>activeTab</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -286,19 +265,21 @@
         <option value="$PROJECT_DIR$/begda/src/common/route.js" />
         <option value="$PROJECT_DIR$/src/util/index.js" />
         <option value="$PROJECT_DIR$/src/components/tabs/tabs.vue" />
-        <option value="$PROJECT_DIR$/public/mock/menu.json" />
         <option value="$PROJECT_DIR$/src/stores/modules/api.js" />
-        <option value="$PROJECT_DIR$/src/util/http.js" />
-        <option value="$PROJECT_DIR$/babel.config.js" />
-        <option value="$PROJECT_DIR$/src/config/index.js" />
         <option value="$PROJECT_DIR$/src/mixin/isApp.js" />
-        <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/layouts/default/mixin.js" />
-        <option value="$PROJECT_DIR$/src/components/menu/sideMenu.vue" />
-        <option value="$PROJECT_DIR$/src/stores/modules/app.js" />
         <option value="$PROJECT_DIR$/.begda/route.js" />
+        <option value="$PROJECT_DIR$/babel.config.js" />
+        <option value="$PROJECT_DIR$/src/util/http.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/config/index.js" />
+        <option value="$PROJECT_DIR$/src/components/menu/sideMenu.vue" />
+        <option value="$PROJECT_DIR$/public/mock/menu.json" />
+        <option value="$PROJECT_DIR$/src/components/durex/index.vue" />
+        <option value="$PROJECT_DIR$/src/components/durex/frame.vue" />
         <option value="$PROJECT_DIR$/src/views/home/index.vue" />
         <option value="$PROJECT_DIR$/src/layouts/default/dark.vue" />
+        <option value="$PROJECT_DIR$/src/stores/modules/app.js" />
+        <option value="$PROJECT_DIR$/src/layouts/default/mixin.js" />
         <option value="$PROJECT_DIR$/src/views/iframe/1.vue" />
       </list>
     </option>
@@ -370,6 +351,13 @@
               <item name="test1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="durex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="test1" type="b2602c69:ProjectViewProjectNode" />
@@ -458,7 +446,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="conf&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/config&#10;config&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/config&#10;bl&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/components/blank.vue&#10;os&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/util/os.js" />
+    <property name="SearchEverywhereHistoryKey" value="conf&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/config&#10;config&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/config&#10;app&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/stores/modules/app.js&#10;con&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/config&#10;http&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/util/http.js&#10;bl&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/components/blank.vue&#10;os&#9;FILE&#9;file:///Users/liaohui1080/Documents/liaohuiFile/code/liaohui_project/前端/vue/vuecli/test1/src/util/os.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -478,11 +466,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/durex" />
       <recent name="$PROJECT_DIR$/src/views/iframe" />
       <recent name="$PROJECT_DIR$/src/views" />
       <recent name="$PROJECT_DIR$/src/views/zijiedian" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/layouts/default" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -553,7 +541,7 @@
       <workItem from="1545730190715" duration="96000" />
       <workItem from="1546144995632" duration="11121000" />
       <workItem from="1546160446204" duration="1518000" />
-      <workItem from="1546335281801" duration="99870000" />
+      <workItem from="1546335281801" duration="106365000" />
     </task>
     <task id="LOCAL-00001" summary="去掉idea文件夹">
       <created>1545706892398</created>
@@ -569,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546674578531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加tab切换&#10;增加iframe">
+      <created>1546861632046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546861632046</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113349000" />
+    <option name="totallyTimeSpent" value="119844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -585,7 +580,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.27995393" side_tool="true" weight="0.23267028" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32987553" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.114107884" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.114107884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2821577" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,26 +623,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="去掉idea文件夹" />
     <MESSAGE value="提交一波" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交一波" />
+    <MESSAGE value="增加tab切换&#10;增加iframe" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加tab切换&#10;增加iframe" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App备用.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aa.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -858,24 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/mock/menu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1742">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/api/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -909,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/menu/sideMenu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.begda/route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -923,20 +881,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/home/index.vue">
+    <entry file="file://$PROJECT_DIR$/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/menu/sideMenu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/home/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/durex/frame.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stores/modules/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#73#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/durex/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mock/menu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/default/dark.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="87" column="18" lean-forward="true" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state relative-caret-position="300">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#el-menu#0;n#el-col#1;n#el-row#0;n#el-header#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#el-col#1;n#el-row#0;n#el-header#0;n#el-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -950,49 +982,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stores/modules/app.js">
+    <entry file="file://$PROJECT_DIR$/src/layouts/default/mixin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#73#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="482">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/iframe/1.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/default/mixin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="1" selection-start-line="1" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>

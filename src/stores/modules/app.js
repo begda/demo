@@ -5,9 +5,6 @@
 
 import {deviced, layout} from "@/util/index";
 import _ from 'lodash'
-function dedupe(array) {
-	return Array.from(new Set(array));
-}
 let cacheArr = new Set()
 let tabsArr =[]
 const state = {
@@ -18,8 +15,8 @@ const state = {
 	deviced: {}, // 存储系统类型
 	meta: {}, // 存储当前页面的设置的app状态
 	noCache: [], //存储当前不缓存的页面
-	tabs: [],
-	activeTab: ''
+	tabs: [], //当前显示的所有tab
+	activeTab: '' // 当前选中tab 是一个字符串
 	// meta: {
 	//     keepAlive: false,
 	//     keepAlive2: true,
@@ -112,6 +109,7 @@ const mutations = {
 		let tabIndex=_.findIndex(state.tabs,newData)
 		state.tabs.splice(tabIndex,1)
 	},
+	//当前选中的tab
 	activeTab(state, data) {
 		state.activeTab = data
 	},
