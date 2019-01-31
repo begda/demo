@@ -7,9 +7,10 @@ import store from "@/stores/index";
 import Meta from "vue-meta";
 import ElementUI from "element-ui";
 import mixinApp from "./mixin/isApp";
-import {recursionMenu} from '@/util/index'
-
-
+import {recursionMenu} from '@/util/index' //递归菜单
+import Avue from '@smallwei/avue';
+import '@smallwei/avue/lib/theme-chalk/index.css';
+Vue.use(Avue);
 Vue.use(mixinApp);
 Vue.use(ElementUI);
 Vue.use(Meta);
@@ -66,6 +67,10 @@ Vue.prototype.$refreshLeave = function(newRoute) {
 	},100)
 };
 
+Vue.liaohui=()=>{
+	console.log('liaohuissss')
+}
+Vue.liaohui()
 async function render() {
   Vue.config.productionTip = false;
 	store.dispatch("api/navMenu"); //获取导航菜单
