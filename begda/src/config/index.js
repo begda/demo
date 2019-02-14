@@ -1,10 +1,13 @@
 const path = require('path')
 let fsExtra = require('fs-extra')
 const getRootDir = () => {
+    // 获取文件所在的当前目录
     const isPath=path.resolve('.')
 
+    // 分割目录为数组
     const pathArr=isPath.split('/')
 
+    // 递减目录数组
     for (let a=pathArr.length-1 ; a>=0;a--){
 
         let c=[]
