@@ -3,7 +3,15 @@ import store from "@/stores/index";
 store.commit('os') //获取当前设备 ,由于路由生成的文件是级别高的,所以判断设备写在这里 第一次运行
 // 检测当前是什么设备
 let os = store.getters.mobile;
-export default [{ name:'home',
+export default [{ name:'a',
+                 path:'/a',
+                 chunkName:'./a',
+                 component:async (resolve)=>{
+                    let module=	await import('@/views/a.vue')
+                    module.default.name='a' //给组件设置名字
+                    return module
+                 }
+                 },{ name:'home',
                  path:'/home',
                  chunkName:'./home/index',
                  component:async (resolve)=>{

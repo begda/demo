@@ -9,6 +9,7 @@
     "begda": "index.js"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "store": "^2.0.12"
   }
 }

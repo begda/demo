@@ -1,11 +1,16 @@
 const path = require('path')
 let fsExtra = require('fs-extra')
+const escapeRegExp =require('lodash/escapeRegExp')
 const getRootDir = () => {
+    // const reqSep = /\//g
+    // const sysSep = escapeRegExp(path.sep)
+    // const normalize = string => string.replace(reqSep, sysSep)
+    // console.log(sysSep)
     // 获取文件所在的当前目录
     const isPath=path.resolve('.')
 
     // 分割目录为数组
-    const pathArr=isPath.split('/')
+    const pathArr=isPath.split(path.sep)
 
     // 递减目录数组
     for (let a=pathArr.length-1 ; a>=0;a--){
